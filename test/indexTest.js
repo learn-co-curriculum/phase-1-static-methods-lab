@@ -30,7 +30,7 @@ describe( "Formatter", () => {
       expect( Formatter.titleize( "F forever foolish" ) ).to.not.throw
     } )
 
-    it( "capitalizes all words in a setence except 'the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', and 'from'", () => {
+    it( "capitalizes all words in a sentence except 'the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', and 'from'", () => {
       expect( Formatter.titleize( "getting giggles" ) ).to.equal( "Getting Giggles" )
       expect( Formatter.titleize( "where the wild things are" ) ).to.equal( "Where the Wild Things Are" )
       expect( Formatter.titleize( "chicken soup with rice and a few other songs" ) ).to.equal( "Chicken Soup With Rice and a Few Other Songs" )
