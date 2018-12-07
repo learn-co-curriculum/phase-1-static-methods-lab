@@ -22,6 +22,7 @@ class StaticMethod {
 	}
 }
 ```
+
 Because `static` methods are called directly on the classes themselves, `static`
 methods have no access to data stored in specific objects. 
 
@@ -42,6 +43,7 @@ from within another `static` method from the same class using `this`.
 
 You are going to write three `static` methods in the `class Formatter`. Write your
 code in the index.js file. Let the tests guide you through the process.
+
 1. Write a method `static capitalize` that takes in a string and capitalizes the
 first letter.
 2. Write a method `static sanitize` that takes in a string and removes all
