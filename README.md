@@ -13,10 +13,10 @@ directly on a class itself.
 ### Declaring a Static Method
 
 To declare a static method, we write the word `static` inside the class
-declaration:
+declaration directly before a method's name:
 
 ```js
-class staticMethod {
+class StaticMethod {
 	static methodName() {
 		console.log("My method is static!")
 	}
@@ -28,17 +28,11 @@ methods have no access to data stored in specific objects.
 ### Calling a Static Method
 
 As the static method is operating on the class, you call the static method
-directly on the class. This gives us two ways to call the method. 
+directly on the class.
 
 ```js
-staticMethod.methodName()
+StaticMethod.methodName()
 // Calls the method explicitly on the class name itself and returns the static value
-```
-
-```js
-this.constructor.methodName()
-// Calls it on the constructor of the property of the class
-// Refers to the class of the current instance, where the static property could be overridden
 ```
 
 For static methods, `this` references the class. You can call a static method
@@ -51,7 +45,7 @@ code in the index.js file. Let the tests guide you through the process.
 1. Write a method `static capitalize` that takes in a string and capitalizes the
 first letter.
 2. Write a method `static sanitize` that takes in a string and removes all
-alphanumeric characters except for dashes, single quotes and spaces.
+non-alphanumeric characters except for dashes, single quotes and spaces.
 3. Write a method `static titleize` that takes in a string and capitalizes all
 words in a sentence except the, a, an, but, of, and, for, at, by, and from; and
 always capitalizes the first word.
