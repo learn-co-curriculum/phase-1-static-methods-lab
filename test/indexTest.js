@@ -1,3 +1,5 @@
+require ( './helpers.js' );
+
 describe( "Formatter", () => {
   describe( "capitalize", () => {
     it( "is a static method", () => {
